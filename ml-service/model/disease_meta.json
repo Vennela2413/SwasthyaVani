@@ -1,0 +1,874 @@
+{
+  "Malaria": {
+    "severity": "high",
+    "advice": "Visit doctor immediately. Take prescribed antimalarial drugs. Use mosquito nets. Stay hydrated.",
+    "telugu": "మలేరియా",
+    "hindi": "मलेरिया",
+    "category": "Infectious",
+    "icd10": "B50-B54"
+  },
+  "Dengue Fever": {
+    "severity": "high",
+    "advice": "Hospitalize immediately. Monitor platelet count daily. IV fluids. Papaya leaf juice helps. Avoid aspirin/ibuprofen.",
+    "telugu": "డెంగ్యూ జ్వరం",
+    "hindi": "डेंगू बुखार",
+    "category": "Infectious",
+    "icd10": "A90"
+  },
+  "Typhoid Fever": {
+    "severity": "high",
+    "advice": "Consult doctor urgently. Eat soft digestible food. Drink only boiled water. Complete full antibiotic course.",
+    "telugu": "టైఫాయిడ్ జ్వరం",
+    "hindi": "टाइफाइड बुखार",
+    "category": "Infectious",
+    "icd10": "A01"
+  },
+  "Tuberculosis": {
+    "severity": "high",
+    "advice": "Go to government hospital — TB treatment is FREE under RNTCP. Take full DOTS course (6 months). Cover mouth while coughing.",
+    "telugu": "క్షయవ్యాధి",
+    "hindi": "तपेदिक",
+    "category": "Infectious",
+    "icd10": "A15-A19"
+  },
+  "Cholera": {
+    "severity": "high",
+    "advice": "Drink ORS immediately. Hospitalize. Complete antibiotic course. Boil all drinking water. Strict hygiene.",
+    "telugu": "కలరా",
+    "hindi": "हैजा",
+    "category": "Infectious",
+    "icd10": "A00"
+  },
+  "Chikungunya": {
+    "severity": "high",
+    "advice": "Rest completely. Paracetamol for fever. Avoid aspirin. Anti-inflammatory for joints. Physiotherapy for joint pain.",
+    "telugu": "చికున్‌గున్యా",
+    "hindi": "चिकनगुनिया",
+    "category": "Infectious",
+    "icd10": "A92.0"
+  },
+  "Zika Virus": {
+    "severity": "moderate",
+    "advice": "Rest and drink fluids. Paracetamol for fever. Pregnant women must see doctor immediately. Use mosquito protection.",
+    "telugu": "జికా వైరస్",
+    "hindi": "जीका वायरस",
+    "category": "Infectious",
+    "icd10": "A92.5"
+  },
+  "Leptospirosis": {
+    "severity": "high",
+    "advice": "Hospitalize immediately. IV antibiotics (Penicillin/Doxycycline). Avoid flooded water. Common after floods in India.",
+    "telugu": "లెప్టోస్పిరోసిస్",
+    "hindi": "लेप्टोस्पायरोसिस",
+    "category": "Infectious",
+    "icd10": "A27"
+  },
+  "Japanese Encephalitis": {
+    "severity": "high",
+    "advice": "MEDICAL EMERGENCY. Hospitalize immediately. No specific antiviral — supportive care. Vaccination available — get it.",
+    "telugu": "జపనీస్ ఎన్సెఫలైటిస్",
+    "hindi": "जापानी एन्सेफलाइटिस",
+    "category": "Infectious",
+    "icd10": "A83.0"
+  },
+  "Rabies": {
+    "severity": "high",
+    "advice": "FATAL if untreated. After animal bite — wash wound 15 min with soap, go to hospital IMMEDIATELY for PEP vaccination.",
+    "telugu": "రేబిస్",
+    "hindi": "रेबीज",
+    "category": "Infectious",
+    "icd10": "A82"
+  },
+  "Scrub Typhus": {
+    "severity": "high",
+    "advice": "See doctor immediately. Doxycycline is the treatment. Common in rural India. Avoid scrub vegetation.",
+    "telugu": "స్క్రబ్ టైఫస్",
+    "hindi": "स्क्रब टाइफस",
+    "category": "Infectious",
+    "icd10": "A75.3"
+  },
+  "Kala-Azar (Visceral Leishmaniasis)": {
+    "severity": "high",
+    "advice": "Free treatment available at govt hospitals. Liposomal Amphotericin B. Do not delay. Endemic in Bihar, Jharkhand.",
+    "telugu": "కాలా-అజర్",
+    "hindi": "काला-अजार",
+    "category": "Infectious",
+    "icd10": "B55.0"
+  },
+  "Filariasis": {
+    "severity": "moderate",
+    "advice": "Mass Drug Administration (MDA) available free. DEC + Albendazole. Lymphedema management. Govt elimination programme.",
+    "telugu": "ఫైలేరియాసిస్",
+    "hindi": "फाइलेरियासिस",
+    "category": "Infectious",
+    "icd10": "B74"
+  },
+  "Common Cold": {
+    "severity": "mild",
+    "advice": "Rest. Warm turmeric milk, ginger tea, steam inhalation. Avoid cold food. Honey+ginger helps. Usually resolves in 7 days.",
+    "telugu": "జలుబు",
+    "hindi": "सर्दी-जुकाम",
+    "category": "Viral",
+    "icd10": "J00"
+  },
+  "Influenza (Flu)": {
+    "severity": "moderate",
+    "advice": "Rest completely. Paracetamol for fever. Warm fluids. Antiviral (Oseltamivir) if severe. Annual flu vaccination recommended.",
+    "telugu": "ఫ్లూ",
+    "hindi": "फ्लू",
+    "category": "Viral",
+    "icd10": "J10-J11"
+  },
+  "COVID-19": {
+    "severity": "high",
+    "advice": "Isolate immediately. Consult doctor. Monitor SpO2. Seek emergency care if SpO2 < 94%. Stay vaccinated and boosted.",
+    "telugu": "కోవిడ్-19",
+    "hindi": "कोविड-19",
+    "category": "Viral",
+    "icd10": "U07.1"
+  },
+  "Chickenpox": {
+    "severity": "moderate",
+    "advice": "Calamine lotion for itching. Cut nails short. Isolate from others. Acyclovir if severe. Vaccination prevents it.",
+    "telugu": "చికెన్‌పాక్స్",
+    "hindi": "चिकनपॉक्स",
+    "category": "Viral",
+    "icd10": "B01"
+  },
+  "Measles": {
+    "severity": "high",
+    "advice": "Hospitalize if severe. Vitamin A supplements. MMR vaccination prevents measles — ensure children are vaccinated.",
+    "telugu": "మీజిల్స్",
+    "hindi": "खसरा",
+    "category": "Viral",
+    "icd10": "B05"
+  },
+  "Mumps": {
+    "severity": "moderate",
+    "advice": "Rest. Soft foods. Paracetamol for pain. MMR vaccine prevents mumps. Isolate from others for 5 days after swelling.",
+    "telugu": "ముంప్స్",
+    "hindi": "कण्ठमाला",
+    "category": "Viral",
+    "icd10": "B26"
+  },
+  "Hepatitis A": {
+    "severity": "high",
+    "advice": "Rest. Avoid alcohol completely. Light diet. Drink clean water only. Vaccination available — get it. Usually self-limiting.",
+    "telugu": "హెపటైటిస్ ఎ",
+    "hindi": "हेपेटाइटिस ए",
+    "category": "Viral",
+    "icd10": "B15"
+  },
+  "Hepatitis B": {
+    "severity": "high",
+    "advice": "See hepatologist. Antiviral therapy (Tenofovir/Entecavir). Avoid alcohol. Vaccination available — 3 doses. Don't share needles.",
+    "telugu": "హెపటైటిస్ బి",
+    "hindi": "हेपेटाइटिस बी",
+    "category": "Viral",
+    "icd10": "B16"
+  },
+  "Hepatitis C": {
+    "severity": "high",
+    "advice": "DAA therapy (Sofosbuvir) — 95% cure rate. Free under PMGSY in India. Avoid alcohol. Don't share needles.",
+    "telugu": "హెపటైటిస్ సి",
+    "hindi": "हेपेटाइटिस सी",
+    "category": "Viral",
+    "icd10": "B17.1"
+  },
+  "Hepatitis E": {
+    "severity": "high",
+    "advice": "Hospitalize. Drink only boiled water. Very dangerous in pregnancy. Rest and supportive care. No specific antiviral.",
+    "telugu": "హెపటైటిస్ ఇ",
+    "hindi": "हेपेटाइटिस ई",
+    "category": "Viral",
+    "icd10": "B17.2"
+  },
+  "HIV/AIDS": {
+    "severity": "high",
+    "advice": "ART therapy available FREE at govt hospitals. CD4 count monitoring. ICTC centres for free testing. Do not stigmatize.",
+    "telugu": "హెచ్‌ఐవి/ఎయిడ్స్",
+    "hindi": "एचआईवी/एड्स",
+    "category": "Viral",
+    "icd10": "B20-B24"
+  },
+  "Herpes Zoster (Shingles)": {
+    "severity": "moderate",
+    "advice": "Antiviral (Acyclovir) within 72 hours. Calamine lotion. Pain management. Avoid contact with pregnant women/newborns.",
+    "telugu": "హెర్పిస్ జోస్టర్",
+    "hindi": "हर्पीज़ ज़ोस्टर",
+    "category": "Viral",
+    "icd10": "B02"
+  },
+  "Hand Foot Mouth Disease": {
+    "severity": "mild",
+    "advice": "Supportive care. Cold fluids and soft food. Paracetamol for fever. Highly contagious — wash hands frequently.",
+    "telugu": "హ్యాండ్ ఫుట్ మౌత్ డిసీజ్",
+    "hindi": "हाथ पैर मुंह की बीमारी",
+    "category": "Viral",
+    "icd10": "B08.4"
+  },
+  "Pneumonia": {
+    "severity": "high",
+    "advice": "Hospitalize if SpO2 low. Antibiotics (Amoxicillin/Azithromycin). Oxygen therapy if needed. Complete full antibiotic course.",
+    "telugu": "న్యుమోనియా",
+    "hindi": "निमोनिया",
+    "category": "Bacterial",
+    "icd10": "J18"
+  },
+  "Meningitis": {
+    "severity": "high",
+    "advice": "MEDICAL EMERGENCY — call 108 immediately. IV antibiotics. Can be fatal within hours. Do not delay.",
+    "telugu": "మెనింజైటిస్",
+    "hindi": "मेनिनजाइटिस",
+    "category": "Bacterial",
+    "icd10": "G00-G03"
+  },
+  "Urinary Tract Infection": {
+    "severity": "moderate",
+    "advice": "Drink 3L water daily. Antibiotics (Nitrofurantoin/Trimethoprim). Complete course. Maintain hygiene. Cranberry juice helps.",
+    "telugu": "మూత్ర సంక్రమణ",
+    "hindi": "मूत्र संक्रमण",
+    "category": "Bacterial",
+    "icd10": "N39.0"
+  },
+  "Typhus": {
+    "severity": "high",
+    "advice": "Doxycycline antibiotic. Hospitalize if severe. Louse/flea control. Common in overcrowded areas.",
+    "telugu": "టైఫస్",
+    "hindi": "टाइफस",
+    "category": "Bacterial",
+    "icd10": "A75"
+  },
+  "Diphtheria": {
+    "severity": "high",
+    "advice": "Antitoxin + antibiotics immediately. Hospitalize. DPT vaccination prevents it — ensure children are vaccinated.",
+    "telugu": "డిఫ్తీరియా",
+    "hindi": "डिप्थीरिया",
+    "category": "Bacterial",
+    "icd10": "A36"
+  },
+  "Whooping Cough (Pertussis)": {
+    "severity": "high",
+    "advice": "Azithromycin antibiotic. Hospitalize infants. DPT vaccination prevents it. Isolate patient. Very contagious.",
+    "telugu": "పెర్టుసిస్",
+    "hindi": "काली खांसी",
+    "category": "Bacterial",
+    "icd10": "A37"
+  },
+  "Tetanus": {
+    "severity": "high",
+    "advice": "EMERGENCY — hospitalize immediately. TT injection after any wound. TDaP vaccine prevents tetanus. Clean all wounds.",
+    "telugu": "టెటనస్",
+    "hindi": "टिटनेस",
+    "category": "Bacterial",
+    "icd10": "A33-A35"
+  },
+  "Leprosy": {
+    "severity": "moderate",
+    "advice": "FREE MDT treatment at govt hospitals. 6-12 months treatment. Early detection prevents disability. No stigma — it is curable.",
+    "telugu": "కుష్టు వ్యాధి",
+    "hindi": "कुष्ठ रोग",
+    "category": "Bacterial",
+    "icd10": "A30"
+  },
+  "Type 2 Diabetes": {
+    "severity": "moderate",
+    "advice": "Control sugar diet. Exercise 30 min daily. Metformin as prescribed. Monitor HbA1c every 3 months. Avoid sugar/rice excess.",
+    "telugu": "టైప్ 2 మధుమేహం",
+    "hindi": "टाइप 2 मधुमेह",
+    "category": "Endocrine",
+    "icd10": "E11"
+  },
+  "Type 1 Diabetes": {
+    "severity": "high",
+    "advice": "Insulin therapy mandatory. Monitor blood glucose 4x daily. Carry glucose tablets always. Emergency: glucagon injection.",
+    "telugu": "టైప్ 1 మధుమేహం",
+    "hindi": "टाइप 1 मधुमेह",
+    "category": "Endocrine",
+    "icd10": "E10"
+  },
+  "Hypertension": {
+    "severity": "moderate",
+    "advice": "DASH diet — low salt, fruits, vegetables. Exercise daily. Take prescribed antihypertensives. Monitor BP daily at home.",
+    "telugu": "అధిక రక్తపోటు",
+    "hindi": "उच्च रक्तचाप",
+    "category": "Cardiovascular",
+    "icd10": "I10"
+  },
+  "Heart Attack (MI)": {
+    "severity": "high",
+    "advice": "CALL 108 IMMEDIATELY. Chew 325mg aspirin if available. Do NOT drive. Time is muscle — every minute counts.",
+    "telugu": "గుండె పోటు",
+    "hindi": "दिल का दौरा",
+    "category": "Cardiovascular",
+    "icd10": "I21"
+  },
+  "Heart Failure": {
+    "severity": "high",
+    "advice": "Restrict fluid and salt. Diuretics + ACE inhibitors as prescribed. Weigh daily. No strenuous activity. Cardiac rehab.",
+    "telugu": "గుండె వైఫల్యం",
+    "hindi": "दिल की विफलता",
+    "category": "Cardiovascular",
+    "icd10": "I50"
+  },
+  "Stroke": {
+    "severity": "high",
+    "advice": "CALL 108 IMMEDIATELY — FAST: Face drooping, Arm weakness, Speech difficulty, Time to call. Thrombolysis within 4.5 hrs.",
+    "telugu": "స్ట్రోక్",
+    "hindi": "स्ट्रोक",
+    "category": "Neurological",
+    "icd10": "I63"
+  },
+  "Coronary Artery Disease": {
+    "severity": "high",
+    "advice": "Statins + aspirin as prescribed. Diet modification. Cardiac rehab. Angioplasty if required. Stop smoking immediately.",
+    "telugu": "కరోనరీ ఆర్టరీ డిసీజ్",
+    "hindi": "कोरोनरी आर्टरी रोग",
+    "category": "Cardiovascular",
+    "icd10": "I25"
+  },
+  "Bronchial Asthma": {
+    "severity": "moderate",
+    "advice": "Carry salbutamol inhaler always. Avoid dust/smoke/allergens. Use spacer with inhaler. Step up therapy if uncontrolled.",
+    "telugu": "ఆస్తమా",
+    "hindi": "दमा",
+    "category": "Respiratory",
+    "icd10": "J45"
+  },
+  "COPD": {
+    "severity": "high",
+    "advice": "Stop smoking IMMEDIATELY. Bronchodilators (Tiotropium). Pulmonary rehab. Flu + pneumococcal vaccines. Oxygen if needed.",
+    "telugu": "సీఓపీడీ",
+    "hindi": "सीओपीडी",
+    "category": "Respiratory",
+    "icd10": "J44"
+  },
+  "Hypothyroidism": {
+    "severity": "moderate",
+    "advice": "Levothyroxine daily on empty stomach. TSH test every 6 months. Avoid soy and high-fiber near medication time.",
+    "telugu": "హైపోథైరాయిడిజం",
+    "hindi": "हाइपोथायरायडिज्म",
+    "category": "Endocrine",
+    "icd10": "E03"
+  },
+  "Hyperthyroidism": {
+    "severity": "moderate",
+    "advice": "Antithyroid drugs (Methimazole/PTU). Beta-blockers for symptoms. Radioiodine or surgery if medical therapy fails.",
+    "telugu": "హైపర్‌థైరాయిడిజం",
+    "hindi": "हाइपरथायरायडिज्म",
+    "category": "Endocrine",
+    "icd10": "E05"
+  },
+  "Anemia": {
+    "severity": "moderate",
+    "advice": "Iron tablets (ferrous sulfate) with vitamin C. Iron-rich foods: spinach, jaggery, dates, beans. Treat underlying cause.",
+    "telugu": "రక్తహీనత",
+    "hindi": "एनीमिया",
+    "category": "Hematological",
+    "icd10": "D50-D64"
+  },
+  "Sickle Cell Disease": {
+    "severity": "high",
+    "advice": "Hydroxyurea reduces crises. Pain management during crisis. Folic acid daily. Vaccinations important. Genetic counseling.",
+    "telugu": "సికిల్ సెల్ డిసీజ్",
+    "hindi": "सिकल सेल रोग",
+    "category": "Hematological",
+    "icd10": "D57"
+  },
+  "Gastroenteritis": {
+    "severity": "moderate",
+    "advice": "ORS every 30 minutes. Zinc tablets for children. BRAT diet (Banana, Rice, Apple, Toast). See doctor if continues > 2 days.",
+    "telugu": "గ్యాస్ట్రోఎంటరైటిస్",
+    "hindi": "आंत्रशोथ",
+    "category": "Gastrointestinal",
+    "icd10": "A09"
+  },
+  "Food Poisoning": {
+    "severity": "moderate",
+    "advice": "ORS and fluids. No solid food for 6 hours. BRAT diet. See doctor if vomiting blood or diarrhea for > 2 days.",
+    "telugu": "ఫుడ్ పాయిజనింగ్",
+    "hindi": "खाद्य विषाक्तता",
+    "category": "Gastrointestinal",
+    "icd10": "A05"
+  },
+  "GERD / Acid Reflux": {
+    "severity": "mild",
+    "advice": "Small frequent meals. Avoid spicy/oily/acidic food. Don't lie down after eating. Elevate bed head. PPI (Omeprazole) if needed.",
+    "telugu": "జీఈఆర్డీ",
+    "hindi": "गर्ड / एसिड रिफ्लक्स",
+    "category": "Gastrointestinal",
+    "icd10": "K21"
+  },
+  "Peptic Ulcer": {
+    "severity": "moderate",
+    "advice": "PPI + H.pylori eradication (triple therapy). Avoid NSAIDs, alcohol, spicy food. Eat regular small meals.",
+    "telugu": "పెప్టిక్ అల్సర్",
+    "hindi": "पेप्टिक अल्सर",
+    "category": "Gastrointestinal",
+    "icd10": "K25-K27"
+  },
+  "Appendicitis": {
+    "severity": "high",
+    "advice": "SURGICAL EMERGENCY. Go to hospital immediately. Do NOT take painkillers before diagnosis. Appendectomy required.",
+    "telugu": "అపెండిసైటిస్",
+    "hindi": "अपेंडिसाइटिस",
+    "category": "Gastrointestinal",
+    "icd10": "K35-K37"
+  },
+  "Irritable Bowel Syndrome": {
+    "severity": "mild",
+    "advice": "High fiber diet. Identify trigger foods. Stress management. Probiotics. Antispasmodics for pain. Lifestyle changes key.",
+    "telugu": "ఐబీఎస్",
+    "hindi": "इर्रिटेबल बाउल सिंड्रोम",
+    "category": "Gastrointestinal",
+    "icd10": "K58"
+  },
+  "Piles (Hemorrhoids)": {
+    "severity": "mild",
+    "advice": "High fiber diet. Sitz bath. Hemorrhoid creams. Avoid straining. Surgery (rubber band ligation) for severe cases.",
+    "telugu": "మూలవ్యాధి",
+    "hindi": "बवासीर",
+    "category": "Gastrointestinal",
+    "icd10": "K64"
+  },
+  "Celiac Disease": {
+    "severity": "moderate",
+    "advice": "Strict gluten-free diet for LIFE. Avoid wheat, barley, rye. Nutritional supplements. Regular follow-up with gastroenterologist.",
+    "telugu": "సీలియాక్ డిసీజ్",
+    "hindi": "सीलिएक रोग",
+    "category": "Gastrointestinal",
+    "icd10": "K90.0"
+  },
+  "Jaundice": {
+    "severity": "high",
+    "advice": "Identify and treat underlying cause. Avoid alcohol. Light diet. Rest. Drink sugarcane juice. See doctor urgently.",
+    "telugu": "కామెర్లు",
+    "hindi": "पीलिया",
+    "category": "Hepatic",
+    "icd10": "R17"
+  },
+  "Liver Cirrhosis": {
+    "severity": "high",
+    "advice": "Stop alcohol completely. Low salt diet. Diuretics for fluid. Lactulose for confusion. Transplant for end-stage.",
+    "telugu": "లివర్ సిర్రోసిస్",
+    "hindi": "लिवर सिरोसिस",
+    "category": "Hepatic",
+    "icd10": "K74"
+  },
+  "Alcoholic Hepatitis": {
+    "severity": "high",
+    "advice": "Stop alcohol IMMEDIATELY. Hospitalize if severe. Corticosteroids if indicated. Nutritional support. De-addiction counseling.",
+    "telugu": "ఆల్కహాలిక్ హెపటైటిస్",
+    "hindi": "मादक हेपेटाइटिस",
+    "category": "Hepatic",
+    "icd10": "K70.1"
+  },
+  "Bronchitis": {
+    "severity": "mild",
+    "advice": "Rest. Warm fluids. Steam inhalation. Bronchodilators if needed. Antibiotics only if bacterial. Stop smoking.",
+    "telugu": "బ్రాంకైటిస్",
+    "hindi": "ब्रोंकाइटिस",
+    "category": "Respiratory",
+    "icd10": "J40-J42"
+  },
+  "Pleurisy": {
+    "severity": "moderate",
+    "advice": "Hospitalize. NSAIDs for pain. Treat underlying cause. Thoracentesis if fluid present. Rest and monitoring.",
+    "telugu": "ప్లూరిసీ",
+    "hindi": "फुफ्फुसशोथ",
+    "category": "Respiratory",
+    "icd10": "R09.1"
+  },
+  "Pulmonary Embolism": {
+    "severity": "high",
+    "advice": "EMERGENCY — call 108. Anticoagulation therapy (Heparin). Thrombolytics if severe. Can be fatal if untreated.",
+    "telugu": "పల్మనరీ ఎంబాలిజం",
+    "hindi": "फुफ्फुसीय अन्त: शल्यता",
+    "category": "Respiratory",
+    "icd10": "I26"
+  },
+  "Epilepsy": {
+    "severity": "high",
+    "advice": "Antiepileptic drugs (Valproate/Levetiracetam). Never miss dose. No driving during uncontrolled seizures. Safety precautions.",
+    "telugu": "మూర్ఛ వ్యాధి",
+    "hindi": "मिर्गी",
+    "category": "Neurological",
+    "icd10": "G40"
+  },
+  "Migraine": {
+    "severity": "moderate",
+    "advice": "Dark quiet room. Cold compress. Triptans for acute attack. Preventive: Topiramate/Propranolol. Identify triggers.",
+    "telugu": "మైగ్రేన్",
+    "hindi": "माइग्रेन",
+    "category": "Neurological",
+    "icd10": "G43"
+  },
+  "Alzheimer's Disease": {
+    "severity": "high",
+    "advice": "Cholinesterase inhibitors (Donepezil). Caregiver support essential. Safe home environment. Memory activities. No cure yet.",
+    "telugu": "అల్జీమర్స్ డిసీజ్",
+    "hindi": "अल्जाइमर रोग",
+    "category": "Neurological",
+    "icd10": "G30"
+  },
+  "Parkinson's Disease": {
+    "severity": "high",
+    "advice": "Levodopa/Carbidopa therapy. Physiotherapy and occupational therapy. Exercise improves outcomes. Deep brain stimulation for severe cases.",
+    "telugu": "పార్కిన్సన్స్ డిసీజ్",
+    "hindi": "पार्किंसंस रोग",
+    "category": "Neurological",
+    "icd10": "G20"
+  },
+  "Vertigo": {
+    "severity": "moderate",
+    "advice": "Epley maneuver for BPPV. Vestibular sedatives (Betahistine). Vestibular rehab exercises. Avoid sudden head movements.",
+    "telugu": "వర్టిగో",
+    "hindi": "चक्कर आना",
+    "category": "Neurological",
+    "icd10": "H81"
+  },
+  "Cervical Spondylosis": {
+    "severity": "moderate",
+    "advice": "Physiotherapy. Cervical collar for acute pain. NSAIDs. Neck exercises. Surgery if neurological deficit worsens.",
+    "telugu": "సర్వైకల్ స్పాండిలోసిస్",
+    "hindi": "सर्वाइकल स्पॉन्डिलोसिस",
+    "category": "Musculoskeletal",
+    "icd10": "M47"
+  },
+  "Depression": {
+    "severity": "moderate",
+    "advice": "Antidepressants (SSRIs) + psychotherapy. iCall/Vandrevala Foundation helpline: 1860-2662-345. Exercise helps. Do not isolate.",
+    "telugu": "నిరాశ",
+    "hindi": "अवसाद",
+    "category": "Mental Health",
+    "icd10": "F32"
+  },
+  "Anxiety Disorder": {
+    "severity": "moderate",
+    "advice": "CBT therapy. SSRIs/SNRIs. Breathing exercises. Mindfulness. Avoid caffeine. Exercise regularly. Helpline: 1800-599-0019.",
+    "telugu": "ఆందోళన రుగ్మత",
+    "hindi": "चिंता विकार",
+    "category": "Mental Health",
+    "icd10": "F41"
+  },
+  "Rheumatoid Arthritis": {
+    "severity": "moderate",
+    "advice": "DMARDs (Methotrexate). NSAIDs for pain. Physiotherapy. Low-impact exercise. Regular rheumatologist follow-up.",
+    "telugu": "రుమటాయిడ్ ఆర్థ్రైటిస్",
+    "hindi": "रुमेटीइड गठिया",
+    "category": "Autoimmune",
+    "icd10": "M05-M06"
+  },
+  "Osteoarthritis": {
+    "severity": "moderate",
+    "advice": "Weight loss reduces stress on joints. Physiotherapy. Paracetamol/NSAIDs. Knee replacement for severe cases.",
+    "telugu": "ఆస్టియోఆర్థ్రైటిస్",
+    "hindi": "ऑस्टियोआर्थराइटिस",
+    "category": "Musculoskeletal",
+    "icd10": "M15-M19"
+  },
+  "Gout": {
+    "severity": "moderate",
+    "advice": "Colchicine/NSAIDs for acute attack. Allopurinol for prevention. Avoid red meat, alcohol, purine-rich foods. Drink lots of water.",
+    "telugu": "గౌట్",
+    "hindi": "गठिया (गाउट)",
+    "category": "Metabolic",
+    "icd10": "M10"
+  },
+  "Osteoporosis": {
+    "severity": "moderate",
+    "advice": "Calcium + Vitamin D3 supplements. Bisphosphonates (Alendronate). Weight-bearing exercise. Fall prevention. Bone density scan.",
+    "telugu": "ఆస్టియోపోరోసిస్",
+    "hindi": "ऑस्टियोपोरोसिस",
+    "category": "Musculoskeletal",
+    "icd10": "M80-M81"
+  },
+  "Chronic Kidney Disease": {
+    "severity": "high",
+    "advice": "Low protein, low potassium diet. Strict BP control. Dialysis if GFR < 15. Avoid NSAIDs/contrast dye. Transplant option.",
+    "telugu": "దీర్ఘకాలిక కిడ్నీ వ్యాధి",
+    "hindi": "क्रोनिक किडनी रोग",
+    "category": "Renal",
+    "icd10": "N18"
+  },
+  "Kidney Stones": {
+    "severity": "high",
+    "advice": "Drink 3-4 litres water daily. IV pain relief for acute pain. ESWL/ureteroscopy for stones > 5mm. Low oxalate diet.",
+    "telugu": "కిడ్నీ స్టోన్స్",
+    "hindi": "गुर्दे की पथरी",
+    "category": "Renal",
+    "icd10": "N20"
+  },
+  "Nephrotic Syndrome": {
+    "severity": "high",
+    "advice": "Prednisolone as prescribed. Low salt, moderate protein diet. Diuretics for edema. Monitor urine protein regularly.",
+    "telugu": "నెఫ్రోటిక్ సిండ్రోమ్",
+    "hindi": "नेफ्रोटिक सिंड्रोम",
+    "category": "Renal",
+    "icd10": "N04"
+  },
+  "Psoriasis": {
+    "severity": "moderate",
+    "advice": "Topical corticosteroids. Moisturize regularly. Avoid triggers: stress, infections. Biologics for severe cases. Phototherapy.",
+    "telugu": "సోరియాసిస్",
+    "hindi": "सोरायसिस",
+    "category": "Dermatological",
+    "icd10": "L40"
+  },
+  "Eczema (Atopic Dermatitis)": {
+    "severity": "mild",
+    "advice": "Moisturize 2x daily. Topical steroids for flares. Avoid triggers: soaps, detergents, pet dander. Antihistamines for itch.",
+    "telugu": "ఎక్జిమా",
+    "hindi": "एक्जिमा",
+    "category": "Dermatological",
+    "icd10": "L20"
+  },
+  "Ringworm (Tinea)": {
+    "severity": "mild",
+    "advice": "Antifungal cream (Clotrimazole/Fluconazole). Keep area dry. Don't share towels/combs. Oral antifungals for severe cases.",
+    "telugu": "రింగ్‌వర్మ్",
+    "hindi": "दाद",
+    "category": "Fungal",
+    "icd10": "B35"
+  },
+  "Scabies": {
+    "severity": "mild",
+    "advice": "Permethrin 5% cream all over body. All household members treated simultaneously. Wash all clothes/bedding in hot water.",
+    "telugu": "స్కేబీస్",
+    "hindi": "खुजली (स्केबीज)",
+    "category": "Parasitic",
+    "icd10": "B86"
+  },
+  "Acne": {
+    "severity": "mild",
+    "advice": "Benzoyl peroxide/Salicylic acid wash. Don't pop pimples. Low GI diet. Topical retinoids. Isotretinoin for severe cystic acne.",
+    "telugu": "మొటిమలు",
+    "hindi": "मुँहासे",
+    "category": "Dermatological",
+    "icd10": "L70"
+  },
+  "Vitiligo": {
+    "severity": "mild",
+    "advice": "Topical steroids / tacrolimus. Phototherapy (PUVA/NB-UVB). Sun protection. Cosmetic cover. Psychological support important.",
+    "telugu": "విటిలిగో",
+    "hindi": "विटिलिगो (सफेद दाग)",
+    "category": "Autoimmune",
+    "icd10": "L80"
+  },
+  "Fungal Infection": {
+    "severity": "mild",
+    "advice": "Antifungal cream (Clotrimazole/Miconazole). Keep skin dry. Avoid tight clothing. Oral antifungals (Fluconazole) if severe.",
+    "telugu": "ఫంగల్ ఇన్ఫెక్షన్",
+    "hindi": "फंगल संक्रमण",
+    "category": "Fungal",
+    "icd10": "B35-B49"
+  },
+  "Impetigo": {
+    "severity": "mild",
+    "advice": "Topical mupirocin. Oral antibiotics if widespread. Keep area clean. Highly contagious — don't share towels.",
+    "telugu": "ఇంపెటిగో",
+    "hindi": "इम्पेटिगो",
+    "category": "Bacterial",
+    "icd10": "L01"
+  },
+  "Conjunctivitis (Pink Eye)": {
+    "severity": "mild",
+    "advice": "Antibiotic eye drops (Ciprofloxacin). Cool compress. Don't rub eyes. Very contagious — wash hands frequently.",
+    "telugu": "కంజంక్టివైటిస్",
+    "hindi": "आंख आना",
+    "category": "Ophthalmological",
+    "icd10": "H10"
+  },
+  "Cataract": {
+    "severity": "moderate",
+    "advice": "Surgery (phacoemulsification) is the only treatment. FREE at govt hospitals under NPCB. Don't delay — can cause blindness.",
+    "telugu": "కంటి పొర",
+    "hindi": "मोतियाबिंद",
+    "category": "Ophthalmological",
+    "icd10": "H25-H26"
+  },
+  "Glaucoma": {
+    "severity": "high",
+    "advice": "Eye drops (Timolol/Latanoprost) daily. Laser/surgery if eye drops fail. Regular IOP monitoring. Cannot reverse damage.",
+    "telugu": "గ్లాకోమా",
+    "hindi": "काला मोतिया",
+    "category": "Ophthalmological",
+    "icd10": "H40"
+  },
+  "Diabetic Retinopathy": {
+    "severity": "high",
+    "advice": "Strict blood sugar control. Annual retinal exam for all diabetics. Laser photocoagulation. Anti-VEGF injections. Early detection saves sight.",
+    "telugu": "డయాబెటిక్ రెటినోపతి",
+    "hindi": "मधुमेह रेटिनोपैथी",
+    "category": "Ophthalmological",
+    "icd10": "H36.0"
+  },
+  "Otitis Media (Ear Infection)": {
+    "severity": "mild",
+    "advice": "Antibiotics (Amoxicillin) for bacterial. Analgesics for pain. Avoid water in ear. Follow up after treatment.",
+    "telugu": "చెవి సంక్రమణ",
+    "hindi": "कान का संक्रमण",
+    "category": "ENT",
+    "icd10": "H65-H66"
+  },
+  "Sinusitis": {
+    "severity": "mild",
+    "advice": "Steam inhalation. Saline nasal spray. Decongestants. Antibiotics for bacterial sinusitis > 10 days. FESS surgery for chronic.",
+    "telugu": "సైనసైటిస్",
+    "hindi": "साइनसाइटिस",
+    "category": "ENT",
+    "icd10": "J32"
+  },
+  "Tonsillitis": {
+    "severity": "mild",
+    "advice": "Antibiotics (Penicillin/Amoxicillin) for bacterial. Warm salt gargle. Paracetamol for pain. Tonsillectomy for recurrent cases.",
+    "telugu": "టాన్సిలైటిస్",
+    "hindi": "टॉन्सिलाइटिस",
+    "category": "ENT",
+    "icd10": "J03"
+  },
+  "Polycystic Ovary Syndrome (PCOS)": {
+    "severity": "moderate",
+    "advice": "Weight loss (5-10%) improves symptoms significantly. Metformin. OCP for menstrual regulation. Inositol supplement. Exercise.",
+    "telugu": "పీసీఓఎస్",
+    "hindi": "पीसीओएस",
+    "category": "Reproductive",
+    "icd10": "E28.2"
+  },
+  "Endometriosis": {
+    "severity": "moderate",
+    "advice": "NSAIDs for pain. Hormonal therapy (OCP/GnRH). Laparoscopic surgery. Fertility treatment if needed. Manage with support.",
+    "telugu": "ఎండోమెట్రియోసిస్",
+    "hindi": "एंडोमेट्रियोसिस",
+    "category": "Reproductive",
+    "icd10": "N80"
+  },
+  "Preeclampsia": {
+    "severity": "high",
+    "advice": "OBSTETRIC EMERGENCY. Hospitalize immediately. Magnesium sulfate for seizure prevention. Delivery may be needed. Monitor baby.",
+    "telugu": "ప్రీఎక్లాంప్సియా",
+    "hindi": "प्रीएक्लेम्पसिया",
+    "category": "Obstetric",
+    "icd10": "O14"
+  },
+  "Childhood Malnutrition": {
+    "severity": "high",
+    "advice": "CMAM programme at PHC. Ready-to-use therapeutic food (RUTF). Treat infections. Micronutrient supplements. NRC admission if SAM.",
+    "telugu": "పోషకాహార లోపం",
+    "hindi": "कुपोषण",
+    "category": "Nutritional",
+    "icd10": "E40-E46"
+  },
+  "Rotavirus Diarrhea": {
+    "severity": "high",
+    "advice": "ORS immediately. Zinc 20mg for 14 days. Breastfeed continuously. Hospitalize if severely dehydrated. Rotavirus vaccine prevents it.",
+    "telugu": "రోటావైరస్ విరేచనాలు",
+    "hindi": "रोटावायरस दस्त",
+    "category": "Gastrointestinal",
+    "icd10": "A08.0"
+  },
+  "Kawasaki Disease": {
+    "severity": "high",
+    "advice": "IVIG + Aspirin — start immediately. Echocardiogram mandatory. Hospitalize. Can cause coronary aneurysm if untreated.",
+    "telugu": "కవాసాకి డిసీజ్",
+    "hindi": "कावासाकी रोग",
+    "category": "Pediatric",
+    "icd10": "M30.3"
+  },
+  "Oral Cancer": {
+    "severity": "high",
+    "advice": "See oncologist urgently. Stop tobacco/betel nut/alcohol IMMEDIATELY. Biopsy for diagnosis. Surgery+radiation. Early detection = high survival.",
+    "telugu": "నోటి క్యాన్సర్",
+    "hindi": "मुख कैंसर",
+    "category": "Oncological",
+    "icd10": "C00-C14"
+  },
+  "Cervical Cancer": {
+    "severity": "high",
+    "advice": "HPV vaccination prevents it. Pap smear every 3 years. VIA screening at PHC is FREE. Early detection is curable. No stigma.",
+    "telugu": "సర్వైకల్ క్యాన్సర్",
+    "hindi": "गर्भाशय ग्रीवा का कैंसर",
+    "category": "Oncological",
+    "icd10": "C53"
+  },
+  "Breast Cancer": {
+    "severity": "high",
+    "advice": "Self-exam monthly. Mammogram after 40. PMNL scheme for free treatment. Surgery+chemo+radiation. Early stage = 95% survival.",
+    "telugu": "బ్రెస్ట్ క్యాన్సర్",
+    "hindi": "स्तन कैंसर",
+    "category": "Oncological",
+    "icd10": "C50"
+  },
+  "Dehydration": {
+    "severity": "moderate",
+    "advice": "ORS solution. Coconut water. Drink 3L water daily. Avoid sugary drinks. IV fluids if severe dehydration. Seek shade.",
+    "telugu": "నిర్జలీకరణం",
+    "hindi": "निर्जलीकरण",
+    "category": "General",
+    "icd10": "E86"
+  },
+  "Sunstroke / Heat Stroke": {
+    "severity": "high",
+    "advice": "Move to cool place immediately. Cold wet cloth on body. Cold water to drink. Call 108 if unconscious. Fan continuously.",
+    "telugu": "సన్‌స్ట్రోక్",
+    "hindi": "लू लगना",
+    "category": "Environmental",
+    "icd10": "T67"
+  },
+  "Varicose Veins": {
+    "severity": "mild",
+    "advice": "Compression stockings. Elevate legs. Exercise regularly. Avoid prolonged standing. Sclerotherapy/surgery for severe cases.",
+    "telugu": "వేరికోస్ వెయిన్స్",
+    "hindi": "वैरिकाज़ नसें",
+    "category": "Vascular",
+    "icd10": "I83"
+  },
+  "Allergic Rhinitis": {
+    "severity": "mild",
+    "advice": "Identify allergens (dust, pollen, pet dander). Antihistamines (Cetirizine). Nasal corticosteroid spray. Allergen immunotherapy.",
+    "telugu": "అలర్జిక్ రినైటిస్",
+    "hindi": "एलर्जिक राइनाइटिस",
+    "category": "Allergic",
+    "icd10": "J30"
+  },
+  "Drug Reaction / Allergy": {
+    "severity": "high",
+    "advice": "Stop the offending drug IMMEDIATELY. Antihistamines + corticosteroids. Call 108 if anaphylaxis. Carry allergy card.",
+    "telugu": "డ్రగ్ రియాక్షన్",
+    "hindi": "दवा एलर्जी",
+    "category": "Allergic",
+    "icd10": "T88.7"
+  },
+  "Insomnia": {
+    "severity": "mild",
+    "advice": "Fixed sleep schedule. No screens 1 hour before bed. No caffeine after 4pm. CBT-I therapy most effective. Melatonin for short-term.",
+    "telugu": "నిద్రలేమి",
+    "hindi": "अनिद्रा",
+    "category": "Sleep",
+    "icd10": "G47.0"
+  },
+  "Dengue Shock Syndrome": {
+    "severity": "high",
+    "advice": "ICU ADMISSION REQUIRED IMMEDIATELY. IV fluid resuscitation. Platelet transfusion. Intensive monitoring. CALL 108 NOW.",
+    "telugu": "డెంగ్యూ షాక్ సిండ్రోమ్",
+    "hindi": "डेंगू शॉक सिंड्रोम",
+    "category": "Infectious",
+    "icd10": "A91"
+  },
+  "Hypoglycemia": {
+    "severity": "high",
+    "advice": "15-15 rule: 15g fast carbs (glucose tab/juice), recheck after 15 min. If unconscious: glucagon injection. Then eat a meal.",
+    "telugu": "హైపోగ్లైసీమియా",
+    "hindi": "हाइपोग्लाइसीमिया",
+    "category": "Endocrine",
+    "icd10": "E16.0"
+  },
+  "Worm Infestation": {
+    "severity": "mild",
+    "advice": "Albendazole 400mg single dose. All family members treat together. Wash hands before eating. Cook food well. Clean water.",
+    "telugu": "వర్మ్ ఇన్ఫెక్షన్",
+    "hindi": "कृमि संक्रमण",
+    "category": "Parasitic",
+    "icd10": "B77-B83"
+  }
+}

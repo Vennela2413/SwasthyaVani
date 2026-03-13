@@ -1,0 +1,42 @@
+{
+  "best_model": "Deep Neural Network",
+  "best_accuracy": 91.97,
+  "best_type": "dnn",
+  "num_diseases": 109,
+  "num_symptoms": 143,
+  "all_results": [
+    {
+      "Model": "Random Forest",
+      "Accuracy (%)": 91.48,
+      "Precision (%)": 92.49,
+      "Recall (%)": 91.48,
+      "F1-Score Weighted": 91.71,
+      "F1-Score Macro": 91.71,
+      "ROC-AUC (Macro)": 99.53,
+      "Training Time (s)": 1.77,
+      "CV Accuracy (5-fold)": "90.66% \u00b1 11.18%"
+    },
+    {
+      "Model": "XGBoost",
+      "Accuracy (%)": 91.59,
+      "Precision (%)": 92.69,
+      "Recall (%)": 91.59,
+      "F1-Score Weighted": 91.86,
+      "F1-Score Macro": 91.86,
+      "ROC-AUC (Macro)": 99.94,
+      "Training Time (s)": 37.46,
+      "CV Accuracy (5-fold)": "89.72% \u00b1 12.93%"
+    },
+    {
+      "Model": "Deep Neural Network",
+      "Accuracy (%)": 91.97,
+      "Precision (%)": 92.96,
+      "Recall (%)": 91.97,
+      "F1-Score Weighted": 92.05,
+      "F1-Score Macro": 92.05,
+      "ROC-AUC (Macro)": 99.9,
+      "Training Time (s)": 49.81,
+      "CV Accuracy (5-fold)": "N/A (DNN)"
+    }
+  ]
+}

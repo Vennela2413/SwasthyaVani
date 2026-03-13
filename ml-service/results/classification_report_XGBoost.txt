@@ -1,0 +1,117 @@
+Classification Report — XGBoost
+======================================================================
+                                    precision    recall  f1-score   support
+
+                              Acne       1.00      0.96      0.98        24
+               Alcoholic Hepatitis       1.00      1.00      1.00        24
+                 Allergic Rhinitis       1.00      0.96      0.98        24
+               Alzheimer's Disease       0.92      0.96      0.94        24
+                            Anemia       1.00      0.83      0.91        24
+                  Anxiety Disorder       0.96      0.92      0.94        24
+                      Appendicitis       0.86      1.00      0.92        24
+                     Breast Cancer       0.77      0.83      0.80        24
+                  Bronchial Asthma       1.00      0.92      0.96        24
+                        Bronchitis       0.92      0.96      0.94        24
+                              COPD       0.96      1.00      0.98        24
+                          COVID-19       1.00      0.96      0.98        24
+                          Cataract       0.21      0.29      0.25        24
+                    Celiac Disease       1.00      0.96      0.98        24
+                   Cervical Cancer       0.88      0.62      0.73        24
+              Cervical Spondylosis       0.96      1.00      0.98        24
+                        Chickenpox       0.95      0.88      0.91        24
+                       Chikungunya       0.82      0.75      0.78        24
+            Childhood Malnutrition       0.96      0.92      0.94        24
+                           Cholera       0.89      1.00      0.94        24
+            Chronic Kidney Disease       1.00      0.88      0.93        24
+                       Common Cold       0.91      0.88      0.89        24
+         Conjunctivitis (Pink Eye)       0.95      0.88      0.91        24
+           Coronary Artery Disease       0.87      0.83      0.85        24
+                       Dehydration       1.00      0.92      0.96        24
+                      Dengue Fever       0.88      0.92      0.90        24
+             Dengue Shock Syndrome       0.92      1.00      0.96        24
+                        Depression       0.92      0.92      0.92        24
+              Diabetic Retinopathy       0.51      0.83      0.63        24
+                        Diphtheria       0.83      0.83      0.83        24
+           Drug Reaction / Allergy       1.00      0.83      0.91        24
+        Eczema (Atopic Dermatitis)       0.90      0.75      0.82        24
+                     Endometriosis       0.90      0.75      0.82        24
+                          Epilepsy       0.96      1.00      0.98        24
+                        Filariasis       0.96      1.00      0.98        24
+                    Food Poisoning       0.88      0.88      0.88        24
+                  Fungal Infection       1.00      0.96      0.98        24
+                GERD / Acid Reflux       1.00      0.92      0.96        24
+                   Gastroenteritis       0.88      0.88      0.88        24
+                          Glaucoma       0.82      0.96      0.88        24
+                              Gout       0.91      0.88      0.89        24
+                          HIV/AIDS       1.00      0.92      0.96        24
+           Hand Foot Mouth Disease       1.00      0.96      0.98        24
+                 Heart Attack (MI)       0.92      0.92      0.92        24
+                     Heart Failure       1.00      1.00      1.00        24
+                       Hepatitis A       0.91      0.83      0.87        24
+                       Hepatitis B       1.00      0.88      0.93        24
+                       Hepatitis C       1.00      0.96      0.98        24
+                       Hepatitis E       0.96      1.00      0.98        24
+          Herpes Zoster (Shingles)       0.78      0.88      0.82        24
+                      Hypertension       0.96      0.92      0.94        24
+                   Hyperthyroidism       1.00      1.00      1.00        24
+                      Hypoglycemia       1.00      0.88      0.93        24
+                    Hypothyroidism       1.00      0.92      0.96        24
+                          Impetigo       1.00      1.00      1.00        24
+                   Influenza (Flu)       0.89      1.00      0.94        24
+                          Insomnia       0.91      0.83      0.87        24
+          Irritable Bowel Syndrome       1.00      0.96      0.98        24
+             Japanese Encephalitis       0.88      0.88      0.88        24
+                          Jaundice       0.85      0.92      0.88        24
+Kala-Azar (Visceral Leishmaniasis)       0.96      0.92      0.94        24
+                  Kawasaki Disease       0.96      1.00      0.98        24
+                     Kidney Stones       1.00      1.00      1.00        24
+                           Leprosy       0.85      0.92      0.88        24
+                     Leptospirosis       1.00      0.96      0.98        24
+                   Liver Cirrhosis       1.00      1.00      1.00        24
+                           Malaria       0.88      0.96      0.92        24
+                           Measles       0.96      0.92      0.94        24
+                        Meningitis       1.00      0.88      0.93        24
+                          Migraine       1.00      0.96      0.98        24
+                             Mumps       0.81      0.92      0.86        24
+                Nephrotic Syndrome       0.88      0.96      0.92        24
+                       Oral Cancer       1.00      0.92      0.96        24
+                    Osteoarthritis       1.00      0.96      0.98        24
+                      Osteoporosis       1.00      0.88      0.93        24
+      Otitis Media (Ear Infection)       1.00      0.96      0.98        24
+               Parkinson's Disease       0.89      1.00      0.94        24
+                      Peptic Ulcer       0.96      0.96      0.96        24
+               Piles (Hemorrhoids)       1.00      0.96      0.98        24
+                          Pleurisy       1.00      0.88      0.93        24
+                         Pneumonia       1.00      0.92      0.96        24
+  Polycystic Ovary Syndrome (PCOS)       0.96      1.00      0.98        24
+                      Preeclampsia       0.92      1.00      0.96        24
+                         Psoriasis       1.00      0.83      0.91        24
+                Pulmonary Embolism       0.92      0.96      0.94        24
+                            Rabies       0.92      0.96      0.94        24
+              Rheumatoid Arthritis       0.96      0.92      0.94        24
+                  Ringworm (Tinea)       0.69      0.92      0.79        24
+                Rotavirus Diarrhea       0.92      0.96      0.94        24
+                           Scabies       0.74      0.96      0.84        24
+                      Scrub Typhus       0.92      0.92      0.92        24
+               Sickle Cell Disease       0.55      0.92      0.69        24
+                         Sinusitis       0.96      0.96      0.96        24
+                            Stroke       1.00      1.00      1.00        24
+           Sunstroke / Heat Stroke       0.88      0.88      0.88        24
+                           Tetanus       0.96      0.96      0.96        24
+                       Tonsillitis       0.88      0.88      0.88        24
+                      Tuberculosis       0.92      0.96      0.94        24
+                   Type 1 Diabetes       1.00      0.92      0.96        24
+                   Type 2 Diabetes       1.00      0.92      0.96        24
+                     Typhoid Fever       1.00      0.96      0.98        24
+                            Typhus       0.91      0.88      0.89        24
+           Urinary Tract Infection       0.96      1.00      0.98        24
+                    Varicose Veins       0.96      1.00      0.98        24
+                           Vertigo       1.00      1.00      1.00        24
+                          Vitiligo       0.95      0.75      0.84        24
+        Whooping Cough (Pertussis)       0.91      0.88      0.89        24
+                  Worm Infestation       1.00      1.00      1.00        24
+                        Zika Virus       1.00      0.79      0.88        24
+
+                          accuracy                           0.92      2616
+                         macro avg       0.93      0.92      0.92      2616
+                      weighted avg       0.93      0.92      0.92      2616
