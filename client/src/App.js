@@ -731,54 +731,55 @@ function MainApp() {
   if (screen === "auth") return <AuthPage onSuccess={() => setScreen("home")} />;
 
   return (
-    <div style={{ minHeight:"100vh",background:"#f0fdf4",fontFamily:"'Noto Sans Telugu','Noto Sans Devanagari',system-ui,sans-serif",maxWidth:430,margin:"0 auto",display:"flex",flexDirection:"column" }}>
-      <style>{`@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}*{box-sizing:border-box}textarea:focus{border-color:#064e3b!important;box-shadow:0 0 0 3px rgba(6,78,59,.1)!important}button:active{opacity:.8}a,button{-webkit-tap-highlight-color:transparent}`}</style>
+    <div style={{ minHeight:"100vh",width:"100%",background:"#f0fdf4",fontFamily:"'Noto Sans Telugu','Noto Sans Devanagari',system-ui,sans-serif",display:"flex",flexDirection:"column" }}>
+      <style>{`@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}*{box-sizing:border-box}html,body{margin:0;padding:0}textarea:focus{border-color:#064e3b!important;box-shadow:0 0 0 3px rgba(6,78,59,.1)!important}button:active{opacity:.8}a,button{-webkit-tap-highlight-color:transparent}`}</style>
 
       {/* Header */}
-      <div style={{ background:"#064e3b",padding:"14px 18px",display:"flex",alignItems:"center",justifyContent:"space-between",position:"sticky",top:0,zIndex:10,boxShadow:"0 2px 12px rgba(0,0,0,0.2)" }}>
-        <div style={{ display:"flex",alignItems:"center",gap:10 }}>
-          <div style={{ fontSize:24 }}>🏥</div>
+      <div style={{ background:"#064e3b",padding:"16px 24px",display:"flex",alignItems:"center",justifyContent:"space-between",position:"sticky",top:0,zIndex:10,boxShadow:"0 2px 12px rgba(0,0,0,0.1)" }}>
+        <div style={{ display:"flex",alignItems:"center",gap:12 }}>
+          <div style={{ fontSize:28 }}>🏥</div>
           <div>
-            <div style={{ color:"#fff",fontWeight:800,fontSize:16 }}>{t.title}</div>
-            <div style={{ color:"#6ee7b7",fontSize:10 }}>{t.tag}</div>
+            <div style={{ color:"#fff",fontWeight:800,fontSize:18 }}>{t.title}</div>
+            <div style={{ color:"#a7f3d0",fontSize:11 }}>{t.tag}</div>
           </div>
         </div>
-        <div style={{ display:"flex",gap:5,alignItems:"center" }}>
+        <div style={{ display:"flex",gap:8,alignItems:"center" }}>
           {["en","te","hi"].map(l => (
-            <button key={l} onClick={() => changeLang(l)} style={{ background:lang===l?"#10b981":"rgba(255,255,255,0.15)",color:"#fff",border:"none",borderRadius:8,padding:"4px 8px",fontSize:11,fontWeight:700,cursor:"pointer" }}>
+            <button key={l} onClick={() => changeLang(l)} style={{ background:lang===l?"#10b981":"rgba(255,255,255,0.2)",color:"#fff",border:"none",borderRadius:8,padding:"6px 10px",fontSize:12,fontWeight:700,cursor:"pointer",transition:"all 0.2s" }}>
               {l==="en"?"EN":l==="te"?"తె":"हि"}
             </button>
           ))}
           {user
-            ? <button onClick={() => { logoutUser(); setScreen("home"); clearAll(); setResults(null); setChips([]); setSymText(""); }} style={{ background:"rgba(255,255,255,0.15)",color:"#fff",border:"none",borderRadius:8,padding:"4px 8px",fontSize:11,cursor:"pointer" }}>👤 {user.name.split(" ")[0]}</button>
-            : <button onClick={() => setScreen("auth")} style={{ background:"#10b981",color:"#fff",border:"none",borderRadius:8,padding:"5px 10px",fontSize:11,fontWeight:700,cursor:"pointer" }}>{t.login}</button>
+            ? <button onClick={() => { logoutUser(); setScreen("home"); clearAll(); setResults(null); setChips([]); setSymText(""); }} style={{ background:"rgba(255,255,255,0.2)",color:"#fff",border:"none",borderRadius:8,padding:"6px 12px",fontSize:12,cursor:"pointer",transition:"all 0.2s" }}>👤 {user.name.split(" ")[0]}</button>
+            : <button onClick={() => setScreen("auth")} style={{ background:"#10b981",color:"#fff",border:"none",borderRadius:8,padding:"6px 14px",fontSize:12,fontWeight:700,cursor:"pointer",transition:"all 0.2s" }}>{t.login}</button>
           }
         </div>
       </div>
 
-      {/* Content */}
-      <div style={{ flex:1,overflowY:"auto",paddingTop:18 }}>
-        {screen==="home"    && <HomeScreen/>}
-        {screen==="check"   && <DiagnoseScreen/>}
-        {screen==="results" && <ResultsScreen/>}
-        {screen==="doctors" && <DoctorsScreen/>}
-        {screen==="history" && <HistoryScreen/>}
+      {/* Content Container */}
+      <div style={{ flex:1,overflowY:"auto",display:"flex",justifyContent:"center",alignItems:"flex-start",padding:"24px 16px 100px" }}>
+        <div style={{ width:"100%",maxWidth:900 }}>
+          {screen==="home"    && <HomeScreen/>}
+          {screen==="check"   && <DiagnoseScreen/>}
+          {screen==="results" && <ResultsScreen/>}
+          {screen==="doctors" && <DoctorsScreen/>}
+          {screen==="history" && <HistoryScreen/>}
+        </div>
       </div>
 
       {/* Bottom Nav */}
-      <div style={{ background:"#fff",borderTop:"2px solid #e5e7eb",display:"flex",padding:"8px 0 10px",position:"sticky",bottom:0 }}>
+      <div style={{ background:"#fff",borderTop:"2px solid #e5e7eb",display:"flex",padding:"10px 0 12px",position:"fixed",bottom:0,width:"100%",boxShadow:"0 -2px 12px rgba(0,0,0,0.05)" }}>
         {[{id:"home",icon:"🏠",label:t.home},{id:"check",icon:"🩺",label:t.check},{id:"doctors",icon:"📍",label:t.doctors},{id:"history",icon:"📋",label:t.history}].map(item => (
-          <button key={item.id} onClick={() => goTo(item.id)} style={{ flex:1,background:"none",border:"none",cursor:"pointer",padding:"6px 4px",display:"flex",flexDirection:"column",alignItems:"center",gap:2 }}>
-            <div style={{ fontSize:22 }}>{item.icon}</div>
-            <div style={{ fontSize:10,color:screen===item.id?"#064e3b":"#9ca3af",fontWeight:screen===item.id?800:400 }}>{item.label}</div>
-            {screen===item.id && <div style={{ width:5,height:5,background:"#064e3b",borderRadius:"50%",marginTop:1 }}/>}
+          <button key={item.id} onClick={() => goTo(item.id)} style={{ flex:1,background:"none",border:"none",cursor:"pointer",padding:"8px 4px",display:"flex",flexDirection:"column",alignItems:"center",gap:3,transition:"all 0.2s" }}>
+            <div style={{ fontSize:24 }}>{item.icon}</div>
+            <div style={{ fontSize:11,color:screen===item.id?"#064e3b":"#9ca3af",fontWeight:screen===item.id?700:400 }}>{item.label}</div>
+            {screen===item.id && <div style={{ width:6,height:6,background:"#064e3b",borderRadius:"50%",marginTop:2 }}/>}
           </button>
         ))}
       </div>
     </div>
   );
 }
-
 
 export default function App() {
   return <AuthProvider><MainApp/></AuthProvider>;
