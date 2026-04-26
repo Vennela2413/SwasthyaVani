@@ -282,14 +282,14 @@ function MainApp() {
   const timerRef = useRef(null);  // debounce timer
   const t = UI[lang];
 
-  // ── onChange: update text immediately, debounce chip extraction 400ms ────────
+  // ── onChange: update text immediately, debounce chip extraction 2000ms ────────
   const onType = (e) => {
     const val = e.target.value;
     setSymText(val);                        // update text state — no cursor issue
     clearTimeout(timerRef.current);
     timerRef.current = setTimeout(() => {   // extract chips after user pauses typing
       setChips(extractSymptoms(val));
-    }, 400);
+    }, 2000);
   };
 
   const removeChip = (chip) => setChips(prev => prev.filter(c => c !== chip));
