@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "/api" });
+const API = axios.create({ baseURL: "https://swasthyavani-1.onrender.com" });
 
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem("aidoctor_token");
