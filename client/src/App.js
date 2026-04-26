@@ -279,25 +279,18 @@ function MainApp() {
   const [error, setError]       = useState("");
   const [tip] = useState(TIPS[Math.floor(Math.random() * TIPS.length)]);
   const recRef   = useRef(null);
-  const timerRef = useRef(null);  // debounce timer
+  const textRef  = useRef(null);
   const t = UI[lang];
 
-  // ── onChange: update text immediately, debounce chip extraction 2000ms ────────
-  const onType = (e) => {
-    const val = e.target.value;
-    setSymText(val);                        // update text state — no cursor issue
-    clearTimeout(timerRef.current);
-    timerRef.current = setTimeout(() => {   // extract chips after user pauses typing
-      setChips(extractSymptoms(val));
-    }, 2000);
-  };
+  // ── onChange: removed, using uncontrolled textarea for free typing ───────
 
   const removeChip = (chip) => setChips(prev => prev.filter(c => c !== chip));
 
   const addQuick = (s) => {
-    const newText = symText ? symText + ", " + s : s;
+    const current = textRef.current.value;
+    const newText = current ? current + ", " + s : s;
+    textRef.current.value = newText;
     setSymText(newText);
-    clearTimeout(timerRef.current);
     setChips(extractSymptoms(newText));
   };
 
@@ -358,7 +351,8 @@ function MainApp() {
     r.onresult = (e) => {
       const transcript = Array.from(e.results).map(x => x[0].transcript).join(" ");
       setVoiceLabel(transcript);
-      const newText = symText ? symText + " " + transcript : transcript;
+      const newText = textRef.current.value ? textRef.current.value + " " + transcript : transcript;
+      textRef.current.value = newText;
       setSymText(newText);
       setChips(extractSymptoms(newText));
       setIsListening(false);
@@ -369,8 +363,19 @@ function MainApp() {
   };
 
   const handlePredict = async () => {
-    const query = chips.length > 0 ? chips.join(", ") : symText;
-    if (!query.trim()) return;
+    const query = textRef.current.value.trim();
+    if (!query) return;
+    setSymText(query);
+    const extractedChips = extractSymptoms(query);
+    setChips(extractedChips);
+    if (extractedChips.length > 0) {
+      const joined = extractedChips.join(", ");
+      if (joined !== query) {
+        // Update the textarea to show the canonical symptoms
+        textRef.current.value = joined;
+        setSymText(joined);
+      }
+    }
     setError(""); setIsPredicting(true);
     try {
       const r = await predict(query, lang);
@@ -393,9 +398,9 @@ function MainApp() {
 
     } catch {
       // Backend offline — use local prediction
-      const local = matchDiseases(symText + " " + chips.join(" "));
+      const local = matchDiseases(query + " " + extractedChips.join(" "));
       if (local.length > 0) {
-        setResults({ predictions: local, matched_symptoms: chips.length > 0 ? chips : local[0]?.matched || [], emergency: local[0]?.sev === "high", offline: true });
+        setResults({ predictions: local, matched_symptoms: extractedChips.length > 0 ? extractedChips : local[0]?.matched || [], emergency: local[0]?.sev === "high", offline: true });
         setScreen("results");
       } else {
         setError("Cannot connect to server. Check backend on port 5000.");
@@ -519,13 +524,13 @@ function MainApp() {
           </div>
         </div>
 
-        {/* THE TEXTAREA — simple controlled, just works */}
+        {/* THE TEXTAREA — uncontrolled for free typing */}
         <textarea
-          value={symText}
-          onChange={onType}
+          ref={textRef}
+          defaultValue={symText}
           placeholder={placeholder}
           rows={5}
-          style={{ width:"100%",borderRadius:14,border:"2px solid #d1fae5",padding:"14px 16px",fontSize:15,fontFamily:"'Noto Sans Telugu','Noto Sans Devanagari',system-ui,sans-serif",resize:"vertical",outline:"none",boxSizing:"border-box",background:"#fff",lineHeight:1.8,color:"#111827",marginBottom:10,display:"block" }}
+          style={{ width:"100%",borderRadius:14,border:"2px solid #d1fae5",padding:"14px 16px",fontSize:15,fontFamily:"sans-serif",resize:"vertical",outline:"none",boxSizing:"border-box",background:"#fff",lineHeight:1.8,color:"#111827",marginBottom:10,display:"block" }}
         />
 
         {/* Detected chips */}

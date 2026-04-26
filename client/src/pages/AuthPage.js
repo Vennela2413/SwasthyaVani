@@ -57,18 +57,19 @@ export default function AuthPage({ onSuccess }) {
         <input value={form.phone} onChange={e => set("phone", e.target.value)} placeholder="Phone Number / ఫోన్" type="tel" style={inputStyle} />
         <input value={form.password} onChange={e => set("password", e.target.value)} placeholder="Password (min 4 chars)" type="password" style={inputStyle} />
 
+        <div style={{ marginBottom: 12 }}>
+          <label style={{ fontSize: 12, color: "#6b7280", marginBottom: 4, display: "block" }}>Preferred Language</label>
+          <div style={{ display: "flex", gap: 8 }}>
+            {[["te","తెలుగు"],["hi","हिंदी"],["en","English"]].map(([code, label]) => (
+              <button key={code} onClick={() => set("language", code)} style={{ flex:1, padding:"8px 4px", borderRadius:8, border:`2px solid ${form.language===code?"#064e3b":"#e5e7eb"}`, background: form.language===code?"#064e3b":"#fff", color: form.language===code?"#fff":"#374151", fontSize:12, fontWeight:600, cursor:"pointer" }}>
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {mode === "register" && <>
           <input value={form.village} onChange={e => set("village", e.target.value)} placeholder="Village / గ్రామం / गाँव" style={inputStyle} />
-          <div style={{ marginBottom: 12 }}>
-            <label style={{ fontSize: 12, color: "#6b7280", marginBottom: 4, display: "block" }}>Preferred Language</label>
-            <div style={{ display: "flex", gap: 8 }}>
-              {[["te","తెలుగు"],["hi","हिंदी"],["en","English"]].map(([code, label]) => (
-                <button key={code} onClick={() => set("language", code)} style={{ flex:1, padding:"8px 4px", borderRadius:8, border:`2px solid ${form.language===code?"#064e3b":"#e5e7eb"}`, background: form.language===code?"#064e3b":"#fff", color: form.language===code?"#fff":"#374151", fontSize:12, fontWeight:600, cursor:"pointer" }}>
-                  {label}
-                </button>
-              ))}
-            </div>
-          </div>
         </>}
 
         {error && <div style={{ background: "#fef2f2", border: "1px solid #fecaca", color: "#dc2626", padding: "10px 14px", borderRadius: 10, fontSize: 13, marginBottom: 12 }}>⚠️ {error}</div>}

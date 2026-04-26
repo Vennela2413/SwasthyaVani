@@ -38,12 +38,18 @@ router.post("/register", [
 // POST /api/auth/login
 router.post("/login", async (req, res) => {
   try {
-    const { phone, password } = req.body;
+    const { phone, password, language } = req.body;
     const user = await User.findOne({ phone });
     if (!user) return res.status(400).json({ error: "User not found" });
 
     const match = await bcrypt.compare(password, user.password);
     if (!match) return res.status(400).json({ error: "Wrong password" });
+
+    // Update language if provided and different
+    if (language && language !== user.language) {
+      user.language = language;
+      await user.save();
+    }
 
     res.json({
       token: makeToken(user._id),
