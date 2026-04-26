@@ -4,7 +4,7 @@ const jwt    = require("jsonwebtoken");
 const auth   = require("../middleware/auth");
 const HealthRecord = require("../models/HealthRecord");
 
-const ML_URL = process.env.ML_SERVICE_URL || "http://localhost:5001";
+const ML_URL = process.env.ML_SERVICE_URL || "https://swasthyavani-5.onrender.com";
 
 // Disease database for offline predictions
 const DISEASES = {
